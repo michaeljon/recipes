@@ -2,23 +2,39 @@
 
 This is the start of Caitlyn's cookbook. Sure, there are a few non-minor things on this list (particularly all the Margarita recipes) but most are things that we make often.
 
-- [Chicken teriyaki](chicken-teriyaki.pdf)
-- [Dad's meatballs](dads-meatballs.pdf)
-- [Fried chicken](fried-chicken.pdf)
-- [Grapefruit rita](grapefruit-rita.pdf)
-- [Habanero syrup](habanero-syrup.pdf)
-- [Lemon bars](lemon-bars.pdf)
-- [Lettuce wraps](lettuce-wraps.pdf)
-- [Mango rita](mango-rita.pdf)
-- [Mike-a-rita](mike-a-rita.pdf)
-- [Molasses cookies](molasses-cookies.pdf)
-- [Mom's meatballs](moms-meatballs.pdf)
-- [Oatmeal cookies](oatmeal-cookies.pdf)
-- [Salsa](salsa.pdf)
-- [Scones](scones.pdf)
-- [Tuna pasta salad](tuna-pasta-salad.pdf)
-- [Waffles](waffles.pdf)
-- [Wheat bread](wheat-bread.pdf)
+- Breads
+
+  - [Wheat Bread](wheat-bread.pdf)
+
+- Breakfasts
+
+  - [Scones](scones.pdf)
+  - [Waffles](waffles.pdf)
+
+- Main courses
+
+  - [Chicken Teriyaki](chicken-teriyaki.pdf)
+  - [Dad's Meatballs](dads-meatballs.pdf)
+  - [Fried Chicken](fried-chicken.pdf)
+  - [Lettuce Wraps](lettuce-wraps.pdf)
+  - [Mom's Meatballs](moms-meatballs.pdf)
+  - [Tuna Pasta Salad](tuna-pasta-salad.pdf)
+
+- Desserts and Sweets
+
+  - [Lemon Bars](lemon-bars.pdf)
+  - [Molasses Cookies](molasses-cookies.pdf)
+  - [Oatmeal Cookies](oatmeal-cookies.pdf)
+
+- Libations
+
+  - [Grapefruit Rita](grapefruit-rita.pdf)
+  - [Habanero Syrup](habanero-syrup.pdf)
+  - [Mangorita](mango-rita.pdf)
+  - [Mike-a-Rita](mike-a-rita.pdf)
+
+- Other stuff
+  - [Salsa](salsa.pdf)
 
 Recipes remaining
 
