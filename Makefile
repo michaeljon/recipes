@@ -2,6 +2,7 @@ TARGET=habanero-syrup \
        mango-rita \
        grapefruit-rita \
        chicken-teriyaki \
+       dads-meatballs \
        fried-chicken \
        lemon-bars \
        lettuce-wraps \
@@ -11,6 +12,7 @@ TARGET=habanero-syrup \
        oatmeal-cookies \
        salsa \
        scones \
+       tuna-pasta-salad \
        waffles \
        wheat-bread 
 
