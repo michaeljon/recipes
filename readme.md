@@ -25,6 +25,7 @@ This is the start of Caitlyn's cookbook. Sure, there are a few non-minor things 
 - [Lemon Bars](lemon-bars.pdf)
 - [Molasses Cookies](molasses-cookies.pdf)
 - [Oatmeal Cookies](oatmeal-cookies.pdf)
+- [Peanut Butter Thumbprints](peanut-butter-thumbprints.pdf)
 
 5. Libations
 
@@ -35,11 +36,11 @@ This is the start of Caitlyn's cookbook. Sure, there are a few non-minor things 
 
 6. Other stuff
 
-- [Salsa](salsa.pdf)
+- [Roasted tomato salsa](salsa.pdf)
 
 The next batch of recipes to capture
 
 - Mom: meat sauce, chk parmesan, nummy chk and pasta, tacos, chili, peanut butter/chocolate chip cookies, biscotti, kim's sugar cookies
-- Dad: tacos, super bowl chicken nuggets, taquitos, blackened chicken, grilled chk, grilled potatoes, sugar cookies, peanut butter cookies, oatmeal cookies, m&m cookies
+- Dad: tacos, super bowl chicken nuggets, taquitos, blackened chicken, grilled chk, grilled potatoes, sugar cookies, peanut butter cookies, oatmeal cookies, m&m cookies, chicken / turkey soup, vegetable soup, brownies, french bread
 
 <!-- ls *.tex | sort | sed -r 's/.tex//;s/([-a-z]+)/* [\1](\1.pdf)/' >> readme.md -->
