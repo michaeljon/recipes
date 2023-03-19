@@ -17,6 +17,8 @@ TARGET=habanero-syrup \
        peanut-butter-thumbprints \
        salsa \
        scones \
+       snickerdoodles \
+       sugar-cookies \
        todd-bardal \
        tuna-pasta-salad \
        waffles \

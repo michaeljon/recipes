@@ -29,6 +29,8 @@ This is the start of Caitlyn's cookbook. Sure, there are a few non-minor things 
 - [Oatmeal Cookies](oatmeal-cookies.pdf)
 - [Peanutty Peanut Butter](peanut-butter.pdf)
 - [Peanut Butter Thumbprints](peanut-butter-thumbprints.pdf)
+- [Snickerdoodles](snickerdoodles.pdf)
+- [Sugar Cookies](sugar-cookies.pdf)
 - [Todd Bardal Cookies](todd-bardal.pdf)
 - [White Chocolate Macadamia](white-choco-macadamia.pdf)
 
