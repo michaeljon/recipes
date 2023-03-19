@@ -189,9 +189,10 @@ clean:
 		$(T).bbl $(T).bcf $(T).bit $(T).blg \
 		$(T)-blx.bib $(T).brf $(T).fdb_latexmk \
 		$(T).fls $(T).glg $(T).glo $(T).gls \
-		$(T).glsdefs $(T).glx \ $(T).gxg \
+		$(T).glsdefs $(T).glx \
+		$(T).gxg $(T).gz $(T).synctex.gz \
 		$(T).gxs $(T).idx $(T).ilg $(T).ind \
-		$(T).ist $(T).loa $(T).lof $(T).lol \
+		$(T).ist $(T).loa $(T).lof $(T).log $(T).lol \
 		$(T).lot $(T).maf $(T).mtc $(T).nav \
 		$(T).out $(T).pag $(T).run.xml $(T).snm \
 		$(T).svn $(T).tdo $(T).tns $(T).toc \
