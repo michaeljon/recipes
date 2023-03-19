@@ -1,4 +1,5 @@
-TARGET=habanero-syrup \
+TARGET=title-page \
+       habanero-syrup \
        mango-rita \
        grapefruit-rita \
        chicken-teriyaki \
