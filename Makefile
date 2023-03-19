@@ -2,19 +2,25 @@ TARGET=habanero-syrup \
        mango-rita \
        grapefruit-rita \
        chicken-teriyaki \
+       chocolate-chip \
        dads-meatballs \
        fried-chicken \
+       hot-toddy \
        lemon-bars \
        lettuce-wraps \
+       m-and-m-cookies \
        mike-a-rita \
        molasses-cookies \
        moms-meatballs \
        oatmeal-cookies \
+       peanut-butter \
+       peanut-butter-thumbprints \
        salsa \
        scones \
        tuna-pasta-salad \
        waffles \
-       wheat-bread 
+       wheat-bread \
+       white-choco-macadamia
 
 PDFVIEWER=open -a 'Adobe Acrobat Reader DC'
 

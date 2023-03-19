@@ -22,13 +22,18 @@ This is the start of Caitlyn's cookbook. Sure, there are a few non-minor things 
 
 4. Desserts and Sweets
 
+- [Chocolate Chip Cookies](chocolate-chip.pdf)
 - [Lemon Bars](lemon-bars.pdf)
+- [M&M Cookies](m-and-m-cookies.pdf)
 - [Molasses Cookies](molasses-cookies.pdf)
 - [Oatmeal Cookies](oatmeal-cookies.pdf)
+- [Peanutty Peanut Butter](peanut-butter.pdf)
 - [Peanut Butter Thumbprints](peanut-butter-thumbprints.pdf)
+- [White Chocolate Macadamia](white-choco-macadamia.pdf)
 
 5. Libations
 
+- [Dad's Sore Throat Remedy](hot-toddy.pdf)
 - [Grapefruit Rita](grapefruit-rita.pdf)
 - [Habanero Syrup](habanero-syrup.pdf)
 - [Mangorita](mango-rita.pdf)
