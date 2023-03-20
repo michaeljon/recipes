@@ -5,6 +5,7 @@ TARGET=title-page \
        chicken-teriyaki \
        chocolate-chip \
        dads-meatballs \
+       french-bread \
        fried-chicken \
        hot-toddy \
        lemon-bars \

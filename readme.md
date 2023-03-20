@@ -1,8 +1,3 @@
----
-margin-left: 0.75in
-margin-top: 0.5in
----
-
 # The Miller Family _Cooks Stuff_
 
 This is the start of Caitlyn's cookbook. Sure, there are a few non-minor things on this list (particularly all the Margarita recipes) but most are things that we make often. Eventually
@@ -19,6 +14,7 @@ Enjoy.
 
 1. Breads
 
+   - [French Bread](french-bread.pdf)
    - [Wheat Bread](wheat-bread.pdf)
 
 2. Breakfasts
