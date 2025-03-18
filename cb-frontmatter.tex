@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LICENSE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright 2018 Terrence P. Murphy and Rosalie D'Amico.
+% This file may be distributed and/or modified under the conditions of the LaTeX Project 
+% Public License (“LPPL”), either version 1.3c of this license or (at your option) any 
+% later version. The latest version of this license is at:
+%     http://www.latex-project.org/lppl.txt.
+% This file is author-maintained and  is one of the files that, collectively, make up the 
+% MAKECOOKBOOK bundle available at https://ctan.org/pkg/makecookbook
+% For additional information, please see the associated README file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\MyTitlePage{} % this does a \clearpage
+
+\begin{CopyrightPage}
+	{
+	First Beta Edition (file created \today ) \par
+	\CopyrightInfo{}\par
+
+	No part of this publication may be reproduced, distributed, or transmitted in any form or by any means,
+	including photocopying, recording, or other electronic or mechanical methods, without the prior written
+	permission of the publisher, except in the case of brief quotations embodied in critical reviews and
+	certain other noncommercial uses permitted by copyright law. For permission requests, write to the
+	publisher at the address below. \par
+	\vspace{5pt}
+	ISBN No: {\textsb{978-3-00-000000-0}}\par
+	Library of Congress Control Number: {\textsb{00000000000}} \par
+	\vspace{5pt}
+	Publisher: \par
+	Example Publisher\par
+	111 Address St.\par
+	City, State, 12345\par
+	www.theirwebsite.com
+
+	\vspace{5pt}
+	\hrule
+	\vspace{5pt}
+	The formatting/layout of this book was produced using MiK\TeX\space (with the Lua\TeX\space compiler),
+	which is a software front-end for the \TeX\space / \LaTeX\space typesetting and document preparation
+	system.  See also the \textsb{makecookbook} bundle at:
+
+	\quad https://ctan.org/pkg/makecookbook
+
+	\vspace{5pt}
+	The fonts used in this book are:\par
+	\vspace{6pt}
+	\ColophonFonts{}
+	\vspace{5pt}
+	Front cover image by [Artist].\par
+	Book design by Terrence P. Murphy and Rosalie A. D'Amico.\par
+	Printed by [printer name here], in the United States of America. \par
+	}
+\end{CopyrightPage}  % ends with a \clearpage
+
+\MyDedication{}
+\newpage
+
+\DedicationVerso{} % Optional content for the usually empty verso page after the dedication (and before TOC)
+\newpage
+
+% The \pagestyle{main} call seems to be "in time" to apply to the \tableofcontents
+% (and I even tested making the TOC two pages and the first page was still correct)
+
+\tableofcontents
+\pagestyle{main}
+
+\chapter{Preface}
+\ChapterIntro{
+	This is the start of Caitlyn's cookbook. Sure, there are a few non-minor things on this list
+	(particularly all the Margarita recipes) but most are things that we make often. Eventually
+	we'll get around to making this look like a real cookbook. Well, at least we'll make it so
+	it's nicely formatted so Caitlyn can take it with her wherever she might go.
+
+	This ``cookbook'' got it's start because Caitlyn loves to cook but wanted to make sure she
+	had ``all the recipes'' in hand in case she needed them. Many, but not most, of these came
+	from somewhere else but have been heavily modified to meet the weird dietary needs to the
+	Miller Family. They're not too weird that a ``normal'' person would find these recipes
+	strange or gross. In fact, quite the opposite.
+
+	Enjoy.
+}
+

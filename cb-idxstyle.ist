@@ -1,0 +1,16 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This file is from a question and answer (answer by Enrico Gregorio) at:
+%
+%  https://tex.stackexchange.com/questions/396898/weird-padding-using-imakeidx
+%
+% This file is author-maintained and is one of the files that, collectively, 
+% make up the MAKECOOKBOOK bundle available at:
+%
+%  https://ctan.org/pkg/makecookbook
+%
+% For additional information, please see the associated README file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ delim_0 "\\betterdotfill "
+ delim_1 "\\betterdotfill "
+ delim_2 "\\betterdotfill "

@@ -12,50 +12,7 @@ strange or gross. In fact, quite the opposite.
 
 Enjoy.
 
-1. Breads
-
-   - [French Bread](french-bread.pdf)
-   - [Wheat Bread](wheat-bread.pdf)
-
-2. Breakfasts
-
-   - [Scones](scones.pdf)
-   - [Waffles](waffles.pdf)
-
-3. Main courses
-
-   - [Chicken Teriyaki](chicken-teriyaki.pdf)
-   - [Dad's Meatballs](dads-meatballs.pdf)
-   - [Fried Chicken](fried-chicken.pdf)
-   - [Lettuce Wraps](lettuce-wraps.pdf)
-   - [Mom's Meatballs](moms-meatballs.pdf)
-   - [Tuna Pasta Salad](tuna-pasta-salad.pdf)
-
-4. Desserts and Sweets
-
-   - [Chocolate Chip Cookies](chocolate-chip.pdf)
-   - [Lemon Bars](lemon-bars.pdf)
-   - [M&M Cookies](m-and-m-cookies.pdf)
-   - [Molasses Cookies](molasses-cookies.pdf)
-   - [Oatmeal Cookies](oatmeal-cookies.pdf)
-   - [Peanutty Peanut Butter](peanut-butter.pdf)
-   - [Peanut Butter Thumbprints](peanut-butter-thumbprints.pdf)
-   - [Snickerdoodles](snickerdoodles.pdf)
-   - [Sugar Cookies](sugar-cookies.pdf)
-   - [Todd Bardal Cookies](todd-bardal.pdf)
-   - [White Chocolate Macadamia](white-choco-macadamia.pdf)
-
-5. Libations
-
-   - [Dad's Sore Throat Remedy](hot-toddy.pdf)
-   - [Grapefruit Rita](grapefruit-rita.pdf)
-   - [Habanero Syrup](habanero-syrup.pdf)
-   - [Mangorita](mango-rita.pdf)
-   - [Mike-a-Rita](mike-a-rita.pdf)
-
-6. Other stuff
-
-   - [Roasted tomato salsa](salsa.pdf)
+You can find the cookbook [in the PDF file](./miller-cooks.pdf).
 
 The next batch of recipes to capture
 

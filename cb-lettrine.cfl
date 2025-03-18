@@ -1,0 +1,44 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LICENSE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright 2018 Terrence P. Murphy and Rosalie D'Amico.
+% This file may be distributed and/or modified under the conditions of the LaTeX Project 
+% Public License (“LPPL”), either version 1.3c of this license or (at your option) any 
+% later version. The latest version of this license is at:
+%     http://www.latex-project.org/lppl.txt.
+% This file is author-maintained and  is one of the files that, collectively, make up the 
+% MAKECOOKBOOK bundle available at https://ctan.org/pkg/makecookbook
+% For additional information, please see the associated README file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% The settings below, for the Italianno font, were defined according to our visual tastes.
+%%% No mathematical rule based on the metrices was applied.
+%%% Though the result may not please you, it should be better than the default placement. 
+%%% That said, comments are welcome.
+
+\LettrineOptionsFor{A}{loversize=0.15, findent=0.25\LettrineWidth, nindent=-0.07\LettrineWidth}
+\LettrineOptionsFor{B}{loversize=0.15, findent=0.12\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{C}{loversize=0.15, findent=0.14\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{D}{loversize=0.15, findent=0.15\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{E}{loversize=0.15, findent=0.20\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{F}{loversize=0.15, findent=0.34\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{G}{loversize=0.15, findent=0.16\LettrineWidth, nindent=0.00\LettrineWidth, depth=1}
+\LettrineOptionsFor{H}{loversize=0.15, findent=0.19\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{I}{loversize=0.15, findent=0.62\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{J}{loversize=0.15, findent=0.68\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{K}{loversize=0.15, findent=0.40\LettrineWidth, nindent=-0.18\LettrineWidth}
+\LettrineOptionsFor{L}{loversize=0.15, findent=0.05\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{M}{loversize=0.15, findent=0.21\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{N}{loversize=0.15, findent=0.28\LettrineWidth, nindent=-0.11\LettrineWidth}
+\LettrineOptionsFor{O}{loversize=0.15, findent=0.15\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{P}{loversize=0.15, findent=0.15\LettrineWidth, nindent=-0.18\LettrineWidth}
+\LettrineOptionsFor{Q}{loversize=0.15, findent=0.15\LettrineWidth, nindent=0.00\LettrineWidth, depth=1}
+\LettrineOptionsFor{R}{loversize=0.15, findent=0.07\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{S}{loversize=0.15, findent=0.18\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{T}{loversize=0.15, findent=0.64\LettrineWidth, nindent=-0.29\LettrineWidth}
+\LettrineOptionsFor{U}{loversize=0.15, findent=0.18\LettrineWidth, nindent=0.00\LettrineWidth}
+\LettrineOptionsFor{V}{loversize=0.15, findent=0.67\LettrineWidth, nindent=-0.43\LettrineWidth}
+\LettrineOptionsFor{W}{loversize=0.15, findent=0.43\LettrineWidth, nindent=-0.26\LettrineWidth}
+\LettrineOptionsFor{X}{loversize=0.15, findent=0.42\LettrineWidth, nindent=-0.23\LettrineWidth}
+\LettrineOptionsFor{Y}{loversize=0.15, findent=0.46\LettrineWidth, nindent=-0.39\LettrineWidth}
+\LettrineOptionsFor{Z}{loversize=0.15, findent=0.29\LettrineWidth, nindent=0.30\LettrineWidth, depth=1}
+
+\endinput
