@@ -625,85 +625,60 @@
 
 %************ SECTION 7 - FRONT MATTER HELPER COMMANDS *************************************
 
-\ifMakeCookbook
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % This group for the MAKECOOKBOOK bundle
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \NewDocumentCommand \MyTitlePage{}
-    {
-        \noindent\vspace{144pt}
-        \begin{center}
-            {
-                {\FontTitlepageTitle The Miller Family Cooks} \par
-                \vspace*{\fill}
-                {\FontTitlepageAuthor by Michaeljon Miller and Family}\par
-            }
-        \end{center}
-        \vspace{40pt} \clearpage
-    }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This group for the MAKECOOKBOOK bundle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NewDocumentCommand \MyTitlePage{}
+{
+    \noindent\vspace{144pt}
+    \begin{center}
+        {
+            {\FontTitlepageTitle The Miller Family Cooks} \par
+            \vspace*{\fill}
+            {\FontTitlepageAuthor by Michaeljon Miller and Family}\par
+        }
+    \end{center}
+    \vspace{40pt} \clearpage
+}
 
-    \NewDocumentCommand \ColophonFonts{}
-    {
-        Serif font (primary document font):
-        EB Garamond, \Copyright{} The EB Garamond Project Authors\par
-        \quad (github.com/octaviopardo/EBGaramond12). Licensed under the SIL Open Font License, Version 1.1.\par
-        Sans Serif font:
-        Lato, \Copyright{} Łukasz Dziedzic. Licensed under the SIL Open Font License, Version 1.1.\par
-        Script font: Italianno, \Copyright{} TypeSETit, LLC. Licensed under the SIL Open Font License, Version 1.1.\par
-    }
+\NewDocumentCommand \ColophonFonts{}
+{
+    Serif font (primary document font):
+    EB Garamond, \Copyright{} The EB Garamond Project Authors\par
+    \quad (github.com/octaviopardo/EBGaramond12). Licensed under the SIL Open Font License, Version 1.1.\par
+    Sans Serif font:
+    Lato, \Copyright{} Łukasz Dziedzic. Licensed under the SIL Open Font License, Version 1.1.\par
+    Script font: Italianno, \Copyright{} TypeSETit, LLC. Licensed under the SIL Open Font License, Version 1.1.\par
+}
 
-    \NewDocumentCommand \CopyrightInfo{}
-    {Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
+\NewDocumentCommand \CopyrightInfo{}
+{Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
 
-    \NewDocumentCommand \MyDedication{}
-    {\hrule\vspace{5pt} To my family. And possibly some other stuff. \vspace{5pt}\hrule}
+\NewDocumentCommand \MyDedication{}
+{\hrule\vspace{5pt} For my family, may they find something here that they love, and that they love to share. \vspace{5pt}\hrule}
 
-    \NewDocumentCommand \DedicationVerso{}{}
+\NewDocumentCommand \DedicationVerso{}{}
 
-\else
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % This group for our cookbook
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \NewDocumentCommand \MyTitlePage{} {\noindent \MakeTitlePage{} \clearpage}
-
-    \NewDocumentCommand \ColophonFonts{}
-    {
-        Serif font (primary document font):
-        Adobe Garamond Pro, \Copyright{} Adobe Systems Incorporated.\par
-        Sans Serif font:
-        Adobe Myriad Pro, \Copyright{} Adobe Systems Incorporated.\par
-        Script font: Italianno, \Copyright{} TypeSETit, LLC. Licensed under the SIL Open Font License, Version 1.1.\par
-    }
-
-    \NewDocumentCommand \CopyrightInfo{}
-    {Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
-
-    \NewDocumentCommand \MyDedication{}
-    {\hrule\vspace{5pt}
-        To my family.  Now when you ask \Quote{how do you make...}, I just need to give you a page number.%
-        \vspace{5pt}\hrule}
-
-    \NewDocumentCommand \DedicationVerso{}
-    {
-        \begin{center}
-            {\FontChapterTitle
-                One cannot think well, \\
-                love well, sleep well, \\
-                if one has not dined well.\\
-                \vspace{5pt}
-                \hrule
-                \vspace{5pt}
-                Uno non pu\`o pensare bene, \\
-                amare bene, dormire bene, \\
-                se  non ha mangiato bene. \\
-                \vspace{5pt}
-                \hrule
-                \vspace{5pt}
-                Virginia Woolf
-            }
-        \end{center}
-    }
-\fi
+% \NewDocumentCommand \DedicationVerso{}
+% {
+%     \begin{center}
+%         {\FontChapterTitle
+%             One cannot think well, \\
+%             love well, sleep well, \\
+%             if one has not dined well.\\
+%             \vspace{5pt}
+%             \hrule
+%             \vspace{5pt}
+%             Uno non pu\`o pensare bene, \\
+%             amare bene, dormire bene, \\
+%             se  non ha mangiato bene. \\
+%             \vspace{5pt}
+%             \hrule
+%             \vspace{5pt}
+%             Virginia Woolf
+%         }
+%     \end{center}
+% }
 
 %************ SECTION 8 - GRAPHICX RELATED COMMANDS ****************************************
 \graphicspath{{images/}{../images/}} % look in the img directory (subdir of book root or sibling of tex)
