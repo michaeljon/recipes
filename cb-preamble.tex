@@ -243,11 +243,11 @@
 \definecolor{clrFrameCheffy}{rgb}{0.0, 0.0, 0.75}		% blue!75!black
 \definecolor{clrBackNotes}{rgb}{1.0, 1.0, 1.0}			% white
 \definecolor{clrFrameNotes}{rgb}{0.0, 0.75, 0.0}		% green!75!black
-\definecolor{clrLettrineBig}{gray}{0.25}				% 0.0 = black; 1.0 = white
-\definecolor{clrLettrineSmall}{gray}{0.25}				% 0.0 = black; 1.0 = white
+\definecolor{clrLettrineBig}{gray}{0.35}				% 0.0 = black; 1.0 = white
+\definecolor{clrLettrineSmall}{gray}{0.35}				% 0.0 = black; 1.0 = white
 \definecolor{clrIngTitle}{cmyk}{0.00, 1.00, 1.00, 0.00} % true red
 \definecolor{clrEditNote}{cmyk}{0.00, 1.00, 1.00, 0.00} % true red
-\definecolor{clrHyperRef}{cmyk}{0.00, 1.00, 1.00, 0.00} % true red
+\definecolor{clrHyperRef}{gray}{0.50} % true red
 
 %************ SECTION 4B - A FIX FOR PGFKEYS ***********************************************
 \def\nl{\par}		% see Q 96247 for why we defined \nl for use with pgfkeys
@@ -616,8 +616,8 @@
 			\coordinate (TF) at (5.125, 0.25);
 			\useasboundingbox (TA) rectangle (TB);
 			\draw [line width=1] (TC) to (TD);
-			\node[anchor=north west, align=left, font=\FontTitlepageTitle] at (TE) {Mama, How \\ Do You \\ Make...};
-			\node[left, font=\FontTitlepageAuthor] at (TF) {Rosalie A. D'Amico};
+			\node[anchor=north west, align=left, font=\FontTitlepageTitle] at (TE) {The Miller Family Cooks};
+			\node[left, font=\FontTitlepageAuthor] at (TF) {Michaeljon Miller and Family};
 		\end{tikzpicture}
 		\endgroup
 	}
@@ -636,7 +636,7 @@
 			{
 				{\FontTitlepageTitle The Miller Family Cooks} \par
 				\vspace*{\fill}
-				{\FontTitlepageAuthor by Michaeljon Miller}\par
+				{\FontTitlepageAuthor by Michaeljon Miller and Family}\par
 			}
 		\end{center}
 		\vspace{40pt} \clearpage
@@ -676,7 +676,7 @@
 	}
 
 	\NewDocumentCommand \CopyrightInfo{}
-	{Copyright \Copyright{} 2018, Rosalie A. D'Amico, all rights reserved}
+	{Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
 
 	\NewDocumentCommand \MyDedication{}
 	{\hrule\vspace{5pt}
