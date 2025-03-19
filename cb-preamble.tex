@@ -29,14 +29,14 @@
 % will be loaded with their associated code to make their purpose clearer.
 %*******************************************************************************************
 \usepackage{%
-	xparse, 			% For \NewDocumentCommand and related
-	enumitem,			% improvements to the standard list environments
-	pgfkeys,			% For Key=Value arguments to commands
-	graphicx}           % for including photos = \includegraphics
+    xparse, 			% For \NewDocumentCommand and related
+    enumitem,			% improvements to the standard list environments
+    pgfkeys,			% For Key=Value arguments to commands
+    graphicx}           % for including photos = \includegraphics
 
 \ifCookbookDraft
-	\usepackage[base]{babel}
-	\usepackage{lipsum, layout} %
+    \usepackage[base]{babel}
+    \usepackage{lipsum, layout} %
 \fi
 %\usepackage{indentfirst}   % use if you want first paragraphs indented; see Q 39227 (Warner)
 
@@ -48,61 +48,61 @@
 
 %************ SECTION 2B - ESTABLISH ALL FONTS TO BE USED **********************************
 \ifMakeCookbook
-	\setmainfont{ebgaramond}[   			% EB Garamond
-		Extension=.ttf,
-		UprightFont=*-regular,                  % this face includes small caps
-		ItalicFont=*-italic,
-		BoldFont=*-bold,
-		BoldItalicFont=*-bolditalic,
-		FontFace={sb}{n}{*-semibold},           % this face includes small caps   
-		FontFace={sb}{it}{*-semibolditalic},
-		Ligatures=TeX,
-		Numbers=Lining]				 			% !!! consider Numbers=OldStyle
+    \setmainfont{ebgaramond}[   			% EB Garamond
+        Extension=.ttf,
+        UprightFont=*-regular,                  % this face includes small caps
+        ItalicFont=*-italic,
+        BoldFont=*-bold,
+        BoldItalicFont=*-bolditalic,
+        FontFace={sb}{n}{*-semibold},           % this face includes small caps   
+        FontFace={sb}{it}{*-semibolditalic},
+        Ligatures=TeX,
+        Numbers=Lining]				 			% !!! consider Numbers=OldStyle
 \else
-	\setmainfont{agaramondpro}[   			% Abobe Garamond Pro 
-		Extension=.otf,
-		UprightFont=*-regular,                  % this face includes small caps
-		ItalicFont=*-italic,
-		BoldFont=*-bold,
-		BoldItalicFont=*-bolditalic,
-		FontFace={sb}{n}{*-semibold},           % this face includes small caps   
-		FontFace={sb}{it}{*-semibolditalic},
-		Ligatures=TeX,
-		Numbers=Lining]
+    \setmainfont{agaramondpro}[   			% Abobe Garamond Pro 
+        Extension=.otf,
+        UprightFont=*-regular,                  % this face includes small caps
+        ItalicFont=*-italic,
+        BoldFont=*-bold,
+        BoldItalicFont=*-bolditalic,
+        FontFace={sb}{n}{*-semibold},           % this face includes small caps   
+        FontFace={sb}{it}{*-semibolditalic},
+        Ligatures=TeX,
+        Numbers=Lining]
 \fi
 
 \ifMakeCookbook
-	\setsansfont{lato}[     			% Lato
-		Extension=.ttf,
-		UprightFont=*-regular,       		% \mdseries
-		ItalicFont=*-italic,
-		BoldFont=*-bold,             		% \bfseries
-		BoldItalicFont=*-bolditalic,
-		FontFace={sb}{n}{*-semibold},
-		FontFace={sb}{it}{*-semibolditalic},
-		FontFace={k}{n}{*-black},
-		FontFace={k}{it}{*-blackitalic},
-		Ligatures=TeX,
-		Numbers=Lining]
+    \setsansfont{lato}[     			% Lato
+        Extension=.ttf,
+        UprightFont=*-regular,       		% \mdseries
+        ItalicFont=*-italic,
+        BoldFont=*-bold,             		% \bfseries
+        BoldItalicFont=*-bolditalic,
+        FontFace={sb}{n}{*-semibold},
+        FontFace={sb}{it}{*-semibolditalic},
+        FontFace={k}{n}{*-black},
+        FontFace={k}{it}{*-blackitalic},
+        Ligatures=TeX,
+        Numbers=Lining]
 \else
-	\setsansfont{myriadpro}[     		% Adobe Myriad Pro
-		Extension=.otf,              		% None of the font faces include small caps
-		UprightFont=*-regular,       		% \mdseries
-		ItalicFont=*-it,
-		BoldFont=*-bold,             		% \bfseries
-		BoldItalicFont=*-boldit,
-		FontFace={sb}{n}{*-semibold},
-		FontFace={sb}{it}{*-semiboldit},
-		FontFace={k}{n}{*-black},
-		FontFace={k}{it}{*-blackit},
-		Ligatures=TeX,
-		Numbers=Lining]						% the OldStyle '1' is not too good for ingredients
+    \setsansfont{myriadpro}[     		% Adobe Myriad Pro
+        Extension=.otf,              		% None of the font faces include small caps
+        UprightFont=*-regular,       		% \mdseries
+        ItalicFont=*-it,
+        BoldFont=*-bold,             		% \bfseries
+        BoldItalicFont=*-boldit,
+        FontFace={sb}{n}{*-semibold},
+        FontFace={sb}{it}{*-semiboldit},
+        FontFace={k}{n}{*-black},
+        FontFace={k}{it}{*-blackit},
+        Ligatures=TeX,
+        Numbers=Lining]						% the OldStyle '1' is not too good for ingredients
 \fi
 
 \newfontfamily\MyScriptFont{Italianno}[	% Italianno script font
-	Extension=.ttf,
-	UprightFont=*-Regular,                  % This is the only face for this font
-	Ligatures=TeX]                          % Otherwise, don't get -- converted to en dash, etc. Q 53413
+    Extension=.ttf,
+    UprightFont=*-Regular,                  % This is the only face for this font
+    Ligatures=TeX]                          % Otherwise, don't get -- converted to en dash, etc. Q 53413
 % (and \textendash doesn't work that well with Italianno)
 
 %************ SECTION 2C - HANDLE THE SPECIAL FONT FACES ***********************************
@@ -166,23 +166,23 @@
 \usepackage{geometry} %
 
 \ifCookbookDraft
-	\geometry{paper=letterpaper,      % the physical paper size during draft mode
-		layoutsize={8in,10in},            % always use intended final paper size for layout	
-		layouthoffset=0.25in,             % center the "layout" horizontally
-		layoutvoffset=0.5in,              % center the "layout" vertically
-		%showframe,                       % use when needed
-		showcrop}
+    \geometry{paper=letterpaper,      % the physical paper size during draft mode
+        layoutsize={8in,10in},            % always use intended final paper size for layout	
+        layouthoffset=0.25in,             % center the "layout" horizontally
+        layoutvoffset=0.5in,              % center the "layout" vertically
+        %showframe,                       % use when needed
+        showcrop}
 \else
-	\geometry{papersize={8in,10in}}   % the physical paper size in final production mode
+    \geometry{papersize={8in,10in}}   % the physical paper size in final production mode
 \fi
 % The following are the same in draft and final:
 \geometry{nomarginpar,            % do not reserve space for margin notes
-	bindingoffset=0.375in,
-	inner=0.5in,
-	outer=1in,
-	top=0.75in,
-	bottom=1in,
-	footskip=40pt}                    % default seems to be 27pt
+    bindingoffset=0.375in,
+    inner=0.5in,
+    outer=1in,
+    top=0.75in,
+    bottom=1in,
+    footskip=40pt}                    % default seems to be 27pt
 
 %************ SECTION 3B - IMAKEIDX PACKAGE ************************************************
 \usepackage{imakeidx}				% supports creation of an index (here, a recipe index)
@@ -209,19 +209,19 @@
 \usepackage{fancyhdr}
 
 \fancypagestyle{plain}{ 				 % Need to redefine the "plain" style
-	\fancyhf{}                             % clear the header and footer
-	\renewcommand{\headrulewidth}{0pt}     % use 0 to disable header ruler line
-	\renewcommand{\footrulewidth}{0.2pt}
-	\fancyfoot[RO, LE] {Page \thepage}
+    \fancyhf{}                             % clear the header and footer
+    \renewcommand{\headrulewidth}{0pt}     % use 0 to disable header ruler line
+    \renewcommand{\footrulewidth}{0.2pt}
+    \fancyfoot[RO, LE] {Page \thepage}
 }
 
 \makeatletter % must be OUTSIDE of the command - see Q 444532
 \fancypagestyle{main}{  % identical to plain, except non-\chapter pages in mainmatter                 
-	\fancyhf{}
-	\renewcommand{\headrulewidth}{0pt}
-	\renewcommand{\footrulewidth}{0.2pt}
-	\fancyfoot[RO, LE] {Page \thepage}
-	\fancyfoot[CE,CO]{\if@mainmatter \leftmark\fi}  % See Q340125
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0.2pt}
+    \fancyfoot[RO, LE] {Page \thepage}
+    \fancyfoot[CE,CO]{\if@mainmatter \leftmark\fi}  % See Q340125
 }
 \makeatother
 
@@ -264,7 +264,7 @@
 
 \NewDocumentCommand \AxB{m m o}{{#1\thinspace{x}\thinspace#2}\IfValueT{#3}{#3}}%
 \NewDocumentCommand \AxBxC{m m m o}{%
-	{#1\thinspace{x}\thinspace#2\thinspace{x}\thinspace#3}\IfValueT{#4}{#4}}%
+    {#1\thinspace{x}\thinspace#2\thinspace{x}\thinspace#3}\IfValueT{#4}{#4}}%
 
 \NewDocumentCommand \Inch{m}{{#1-inch}}%
 \NewDocumentCommand \EditNote{m}{{{\color{clrEditNote} #1}}}%
@@ -277,13 +277,13 @@
 
 %************ SECTION 4D - BAKE UNTIL ******************************************************
 \pgfkeys{
-	/BakeUntil/.is family, /BakeUntil,
-	default/.style = {Min = 0, Max = 0, TPick = 0, GBrown = 0, Until = \empty},
-	Min/.estore in 		= \BkMin,
-	Max/.estore in 		= \BkMax,
-	TPick/.estore in 	= \BkTPick,
-	GBrown/.estore in 	= \BkGBrown,
-	Until/.estore in 	= \BkUntil,
+    /BakeUntil/.is family, /BakeUntil,
+    default/.style = {Min = 0, Max = 0, TPick = 0, GBrown = 0, Until = \empty},
+    Min/.estore in 		= \BkMin,
+    Max/.estore in 		= \BkMax,
+    TPick/.estore in 	= \BkTPick,
+    GBrown/.estore in 	= \BkGBrown,
+    Until/.estore in 	= \BkUntil,
 }
 
 \NewDocumentCommand \BakeUntil{m}{%
@@ -313,20 +313,20 @@
 
 \NewDocumentCommand \Attribution{m}{{\hspace*\fill}{\textit{#1}}}%
 \NewDocumentCommand \ThreeLines{}{%
-	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut,
-	placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero,
-	nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut,
+    placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero,
+    nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
 }
 
 \newcount\LineCount
 \NewDocumentCommand \InsertHiddenLines{m}{%
-	\LineCount = #1
-		{%
-			\newcount\foo \foo=0
-			\loop				             % \loop starts the construct ended by \repeat
-			\phantom{.}\par \advance \foo by 1
-			\ifnum \foo < \LineCount \repeat % \repeat also “serves as” the \fi to the \ifnum
-		}%
+    \LineCount = #1
+        {%
+            \newcount\foo \foo=0
+            \loop				             % \loop starts the construct ended by \repeat
+            \phantom{.}\par \advance \foo by 1
+            \ifnum \foo < \LineCount \repeat % \repeat also “serves as” the \fi to the \ifnum
+        }%
 }
 
 %************ SECTION 4F - CHAPTER INTRO ***************************************************
@@ -334,21 +334,21 @@
 \newbox\IntroBoxA
 \NewDocumentCommand \ChapterIntro {o +m}  % arg1 = optional = lines for first part
 {                                         % arg2 = story text
-	\setbox\IntroBox\vbox
-	{
-		\FontChapterIntro
-		{#2\par}      % the \par needed by \lettrine
-	}
-	\IfNoValueTF {#1}    % NoValue=TRUE or NoValue=FALSE?
-	{\unvbox\IntroBox} % NoValue=TRUE, so flush the full IntroBox
-	{                  % handle the NoValue=FALSE case
-		\ifnum #1 > 0      % > 0 means we split the story into two part; print the first part here
-				{                % = 0 means ALL of story is deferred
-					\setbox\IntroBoxA=\vsplit\IntroBox to #1\dimexpr \CIntroFontBaseline % 
-					\unvbox\IntroBoxA  % 
-				}
-		\fi
-	}
+    \setbox\IntroBox\vbox
+    {
+        \FontChapterIntro
+        {#2\par}      % the \par needed by \lettrine
+    }
+    \IfNoValueTF {#1}    % NoValue=TRUE or NoValue=FALSE?
+    {\unvbox\IntroBox} % NoValue=TRUE, so flush the full IntroBox
+    {                  % handle the NoValue=FALSE case
+        \ifnum #1 > 0      % > 0 means we split the story into two part; print the first part here
+                {                % = 0 means ALL of story is deferred
+                    \setbox\IntroBoxA=\vsplit\IntroBox to #1\dimexpr \CIntroFontBaseline % 
+                    \unvbox\IntroBoxA  % 
+                }
+        \fi
+    }
 }
 
 \NewDocumentCommand \FinishChapterIntro{}%
@@ -358,35 +358,35 @@
 
 %************ SECTION 5A - RECIPE NAME AND YIELD *******************************************
 \pgfkeys{
-	/RecipeNameAndYield/.is family, /RecipeNameAndYield,
-	default/.style = {Name = 0, NoIdxName = 0, XRefLabel = \empty, Yield = \empty, %
-			IndexA = \empty, IndexB = \empty, IndexC = \empty},
-	Name/.estore in  	 = \RecipeName,
-	NoIdxName/.estore in = \NoIndexName,
-	IndexA/.estore in    = \IdxA,
-	IndexB/.estore in    = \IdxB,
-	IndexC/.estore in    = \IdxC,
-	XRefLabel/.estore in = \XRefLbl,
-	Yield/.estore in 	 = \RecipeYield,
+    /RecipeNameAndYield/.is family, /RecipeNameAndYield,
+    default/.style = {Name = 0, NoIdxName = 0, XRefLabel = \empty, Yield = \empty, %
+            IndexA = \empty, IndexB = \empty, IndexC = \empty},
+    Name/.estore in  	 = \RecipeName,
+    NoIdxName/.estore in = \NoIndexName,
+    IndexA/.estore in    = \IdxA,
+    IndexB/.estore in    = \IdxB,
+    IndexC/.estore in    = \IdxC,
+    XRefLabel/.estore in = \XRefLbl,
+    Yield/.estore in 	 = \RecipeYield,
 }
 
 \NewDocumentCommand \RecipeNameAndYield {m}{% !!! Need a way to show "starred" (favorite) recipes??
-	\pgfkeys{/RecipeNameAndYield, default, #1}%	
-	% Put the recipe name in the Index, unless the user sets NoIdxName = 1:
-	% (How about any non-empty instead of = 1)?
-	\ifnum\NoIndexName=1 \relax\else\index{\RecipeName}\fi
-	% Can add up to three other Index entries:
-	\ifx\IdxA\empty\relax\else\index{\IdxA}\fi
-	\ifx\IdxB\empty\relax\else\index{\IdxB}\fi
-	\ifx\IdxC\empty\relax\else\index{\IdxC}\fi
-	% Did the user ask us to set up a label for cross-reference?:
-	\ifx\XRefLbl\empty\relax\else\RecipeLabel{\XRefLbl}\fi
-	% Add a bookmark (only adds bookmark if hyperref is active):
-	\ifnum\NoIndexName=1 \RecipeBookmark{\IdxA}\else\RecipeBookmark{\RecipeName}\fi
-	\begin{center}%
-		{\FontRecipeName{\RecipeName}}\par%	
-		\ifx\RecipeYield\empty\relax\else {\textit{\RecipeYield}}\par \fi%	
-	\end{center}%
+    \pgfkeys{/RecipeNameAndYield, default, #1}%	
+    % Put the recipe name in the Index, unless the user sets NoIdxName = 1:
+    % (How about any non-empty instead of = 1)?
+    \ifnum\NoIndexName=1 \relax\else\index{\RecipeName}\fi
+    % Can add up to three other Index entries:
+    \ifx\IdxA\empty\relax\else\index{\IdxA}\fi
+    \ifx\IdxB\empty\relax\else\index{\IdxB}\fi
+    \ifx\IdxC\empty\relax\else\index{\IdxC}\fi
+    % Did the user ask us to set up a label for cross-reference?:
+    \ifx\XRefLbl\empty\relax\else\RecipeLabel{\XRefLbl}\fi
+    % Add a bookmark (only adds bookmark if hyperref is active):
+    \ifnum\NoIndexName=1 \RecipeBookmark{\IdxA}\else\RecipeBookmark{\RecipeName}\fi
+    \begin{center}%
+        {\FontRecipeName{\RecipeName}}\par%	
+        \ifx\RecipeYield\empty\relax\else {\textit{\RecipeYield}}\par \fi%	
+    \end{center}%
 }
 
 %************ SECTION 5B - RECIPE STORY ****************************************************
@@ -395,22 +395,22 @@
 \newbox\StoryBoxA
 \NewDocumentCommand \RecipeStory {o +m}  % arg1 = optional = lines for first part
 {                                        % arg2 = story text
-	\setbox\StoryBox\vbox
-	{
-		\FontRecipeStory
-		\leftskip=\RecipeStoryIndent \rightskip=\leftskip	% Q 66332 see also Q 156986 (egreg and his comment)
-		{#2\par}           % the \par needed by \lettrine
-	}
-	\IfNoValueTF {#1}    % NoValue=TRUE or NoValue=FALSE?
-	{\unvbox\StoryBox} % NoValue=TRUE, so flush the full StoryBox
-	{                  % handle the NoValue=FALSE case
-		\ifnum #1 > 0      % > 0 means we split the story into two part; print the first part here
-				{                % = 0 means ALL of story is deferred
-					\setbox\StoryBoxA=\vsplit\StoryBox to #1\dimexpr \RStoryFontBaseline % 
-					\unvbox\StoryBoxA  % 
-				}
-		\fi
-	}
+    \setbox\StoryBox\vbox
+    {
+        \FontRecipeStory
+        \leftskip=\RecipeStoryIndent \rightskip=\leftskip	% Q 66332 see also Q 156986 (egreg and his comment)
+        {#2\par}           % the \par needed by \lettrine
+    }
+    \IfNoValueTF {#1}    % NoValue=TRUE or NoValue=FALSE?
+    {\unvbox\StoryBox} % NoValue=TRUE, so flush the full StoryBox
+    {                  % handle the NoValue=FALSE case
+        \ifnum #1 > 0      % > 0 means we split the story into two part; print the first part here
+                {                % = 0 means ALL of story is deferred
+                    \setbox\StoryBoxA=\vsplit\StoryBox to #1\dimexpr \RStoryFontBaseline % 
+                    \unvbox\StoryBoxA  % 
+                }
+        \fi
+    }
 }
 
 \NewDocumentCommand \FinishRecipeStory{}%
@@ -422,16 +422,16 @@
 \usepackage{xfp}				% for fpeval floating point macro
 
 \pgfkeys{
-	/IngredientsAndSteps/.is family, /IngredientsAndSteps,
-	default/.style = {AdjIFont = 1, AdjIBaseline = 0,
-			AdjSFont = 0, AdjSBaseline = 0,
-			AddWidth = 0, RaggedCols   = 0},
-	AdjIFont/.estore in     = \AdjustIFont,
-	AdjIBaseline/.estore in = \AdjustIBaseline,
-	AdjSFont/.estore in     = \AdjustSFont,
-	AdjSBaseline/.estore in = \AdjustSBaseline,
-	AddWidth/.estore in     = \AddPageWidth,
-	RaggedCols/.estore in   = \RaggedColumns,
+    /IngredientsAndSteps/.is family, /IngredientsAndSteps,
+    default/.style = {AdjIFont = 1, AdjIBaseline = 0,
+            AdjSFont = 0, AdjSBaseline = 0,
+            AddWidth = 0, RaggedCols   = 0},
+    AdjIFont/.estore in     = \AdjustIFont,
+    AdjIBaseline/.estore in = \AdjustIBaseline,
+    AdjSFont/.estore in     = \AdjustSFont,
+    AdjSBaseline/.estore in = \AdjustSBaseline,
+    AddWidth/.estore in     = \AddPageWidth,
+    RaggedCols/.estore in   = \RaggedColumns,
 }
 
 \newdimen\IFont  \newdimen\IBase  \newdimen\SFont  \newdimen\SBase  \newdimen\AddWidth
@@ -439,71 +439,71 @@
 \NewDocumentEnvironment{IngredientsAndSteps}{o}		% !!! Need \raggedcolumns ??
 % Do the before-environment setup:
 {
-	\IfNoValueTF {#1}%
-	% Handle the simple case = no optional key/value argument:  
-	{\AddWidth = 0 pt}
-	% Handle the special case = there IS an optional key/value argument:
-	{
-		\pgfkeys{/IngredientsAndSteps, default, #1}%
+    \IfNoValueTF {#1}%
+    % Handle the simple case = no optional key/value argument:  
+    {\AddWidth = 0 pt}
+    % Handle the special case = there IS an optional key/value argument:
+    {
+        \pgfkeys{/IngredientsAndSteps, default, #1}%
 
-		\IFont    = \AdjustIFont pt
-		\IBase    = \AdjustIBaseline pt
-		\SFont    = \AdjustSFont pt
-		\SBase    = \AdjustSBaseline pt
-		\AddWidth = \AddPageWidth pt
+        \IFont    = \AdjustIFont pt
+        \IBase    = \AdjustIBaseline pt
+        \SFont    = \AdjustSFont pt
+        \SBase    = \AdjustSBaseline pt
+        \AddWidth = \AddPageWidth pt
 
-		\ifdim\IBase = 0 pt \IBase = \IFont \fi
-		\ifdim\SFont = 0 pt \SFont = \IFont \fi
-		\ifdim\SBase = 0 pt \SBase = \IFont \fi
+        \ifdim\IBase = 0 pt \IBase = \IFont \fi
+        \ifdim\SFont = 0 pt \SFont = \IFont \fi
+        \ifdim\SBase = 0 pt \SBase = \IFont \fi
 
-		\RenewDocumentCommand \FontIngredients {}{\FontIngDefault\fontsize{\fpeval{\StdIFontSize * \IFont}}
-			{\fpeval{\StdIBaseline * \IBase}}\selectfont}
-		\RenewDocumentCommand \FontSteps {}{\FontStepsDefault\fontsize{\fpeval{\StdSFontSize * \SFont}}
-			{\fpeval{\StdSBaseline * \SBase}}\selectfont}
-	}
-	% Now, finish setup:	
-	\adjustwidth{-\AddWidth}{-\AddWidth}
-	\begin{multicols}{2}%
-		} % End of the before-environment setup
-		% Now do the after-environment cleanup:
-		{
-	\end{multicols}
-	\endadjustwidth
-	% We need to restore the fonts to default size IF there was an optional key/value argument:
-	\IfValueT {#1}
-	{
-		\RenewDocumentCommand \FontIngredients {}{\FontIngDefault}
-		\RenewDocumentCommand \FontSteps       {}{\FontStepsDefault}
-	}
+        \RenewDocumentCommand \FontIngredients {}{\FontIngDefault\fontsize{\fpeval{\StdIFontSize * \IFont}}
+            {\fpeval{\StdIBaseline * \IBase}}\selectfont}
+        \RenewDocumentCommand \FontSteps {}{\FontStepsDefault\fontsize{\fpeval{\StdSFontSize * \SFont}}
+            {\fpeval{\StdSBaseline * \SBase}}\selectfont}
+    }
+    % Now, finish setup:	
+    \adjustwidth{-\AddWidth}{-\AddWidth}
+    \begin{multicols}{2}%
+        } % End of the before-environment setup
+        % Now do the after-environment cleanup:
+        {
+    \end{multicols}
+    \endadjustwidth
+    % We need to restore the fonts to default size IF there was an optional key/value argument:
+    \IfValueT {#1}
+    {
+        \RenewDocumentCommand \FontIngredients {}{\FontIngDefault}
+        \RenewDocumentCommand \FontSteps       {}{\FontStepsDefault}
+    }
 } % End of the "after environment" cleanup
 
 %************ SECTION 5D - COMMANDS TO DISPLAY INGREDIENTS AND STEPS ***********************
 \NewDocumentCommand \IngredientsHeading {O{0} m O{2}}%
 {\begingroup
-	\setlength{\parindent}{0pt}
-	\ifnum #1 > 0 {\vspace{#1 pt}}\fi
-	\FontIngTitle\color{clrIngTitle} #2\par%
-	\vspace{#3 pt}
-	\endgroup}%
+    \setlength{\parindent}{0pt}
+    \ifnum #1 > 0 {\vspace{#1 pt}}\fi
+    \FontIngTitle\color{clrIngTitle} #2\par%
+    \vspace{#3 pt}
+    \endgroup}%
 
 \NewDocumentCommand \ListIngredientsAndSteps {o +m +m}
 {
-	\IfValueT {#1}{\IngredientsHeading{#1}[3]}%
-	{\begingroup\ifx\relax#2\relax\else\FontIngredients{}\IngredientsList{#2}\fi\endgroup}%
-	{\begingroup\ifx\relax#3\relax\else\FontSteps{}\RecipeSteps{#3}\fi\endgroup}%
+    \IfValueT {#1}{\IngredientsHeading{#1}[3]}%
+    {\begingroup\ifx\relax#2\relax\else\FontIngredients{}\IngredientsList{#2}\fi\endgroup}%
+    {\begingroup\ifx\relax#3\relax\else\FontSteps{}\RecipeSteps{#3}\fi\endgroup}%
 }
 
 \NewDocumentCommand \IngredientsList { >{\SplitList{\par}} +m}{%
-	\setlength{\parskip}{2pt}\raggedright%
-	\ProcessList{#1}{\ProcessIngList}
+    \setlength{\parskip}{2pt}\raggedright%
+    \ProcessList{#1}{\ProcessIngList}
 }
 \newcommand\ProcessIngList[1]{\hangindent1em #1\par}
 
 \NewDocumentCommand \RecipeSteps { >{\SplitList{\par}} +m}{%         
-	\begin{enumerate}[itemsep=2pt plus 1 pt minus 1pt, parsep=0pt plus 1pt,
-			topsep=4.5pt plus 2.0pt minus 1.0pt, leftmargin=*]
-		\ProcessList{#1}{\item}
-	\end{enumerate}
+    \begin{enumerate}[itemsep=2pt plus 1pt minus 1pt, parsep=0pt plus 1pt,
+            topsep=4.5pt plus 2.0pt minus 1.0pt, leftmargin=*]
+        \ProcessList{#1}{\item}
+    \end{enumerate}
 }
 
 %************ SECTION 5E - THE TIPS, CHEFFY AND CHEFNOTES ENVIRONMENTS *********************
@@ -512,23 +512,23 @@
 
 \NewDocumentEnvironment{Tip}{+m}	%
 {
-	\begin{tcolorbox}[colback=clrBackTip,colframe=clrFrameTip, title=Food for Thought] %
-		{#1}%
-	\end{tcolorbox}
+    \begin{tcolorbox}[colback=clrBackTip,colframe=clrFrameTip, title=Food for Thought] %
+        {#1}%
+    \end{tcolorbox}
 }
 
 \NewDocumentEnvironment{Cheffy}{+m} %
 {
-	\begin{tcolorbox}[colback=clrBackCheffy,colframe=clrFrameCheffy, title=Let's Get Cheffy] %
-		{#1}%
-	\end{tcolorbox}
+    \begin{tcolorbox}[colback=clrBackCheffy,colframe=clrFrameCheffy, title=Let's Get Cheffy] %
+        {#1}%
+    \end{tcolorbox}
 }
 
 \NewDocumentEnvironment{ChefNotes}{+m}	%
 {
-	\begin{tcolorbox}[colback=clrBackNotes,colframe=clrFrameNotes,title=Chefnotes] %
-		\ChefNote{}{#1}%
-	\end{tcolorbox}
+    \begin{tcolorbox}[colback=clrBackNotes,colframe=clrFrameNotes,title=Chefnotes] %
+        \ChefNote{}{#1}%
+    \end{tcolorbox}
 }
 
 %************ SECTION 6 - ANY TIKZ DRAWINGS ************************************************
@@ -539,170 +539,170 @@
 \def\hatwidth{12.5pt}
 \NewDocumentCommand \MakeChefHat{}
 {
-	\begin{tikzpicture}[scale=\hatscale]
-		\coordinate (HA) at (1.27, 0.635);
-		\coordinate (HB) at (5.87375, 0);
-		\coordinate (HC) at (1.5825, 0.9475);
-		\coordinate (HD) at (5.77375, 0.15);
-		\coordinate (HE) at (1.5875,1.905);
-		\coordinate (HF) at (1.8,1.74625);
-		\coordinate (HG) at (6.0325, 1.27);
-		\coordinate (HH) at (6.22, 1.33);
-		\coordinate (HI) at (6.45, 2.18);
-		\coordinate (HJ) at (6.35, 2.70);
-		\coordinate (HK) at (8.5725, 3.97);
-		\coordinate (HL) at (6.03, 4.7625);
-		\coordinate (HM) at (6.03, 3.651);
-		\coordinate (HN) at (2.2225, 5.3975);
-		\coordinate (HO) at (0.159, 4.603);
-		\coordinate (HP) at (1.587, 3.55);
-		\coordinate (HQ) at (2.5, 4.7625);
-		\coordinate (HR) at (2.778, 2.08);
-		\coordinate (HS) at (2.7, 4.1275);
-		\coordinate (HT) at (4.0, 1.98);
-		\coordinate (HU) at (4.286, 3.4925);
-		\coordinate (HV) at (5.3, 1.7);
-		\coordinate (HW) at (5.55, 2.85);
-		\coordinate (HX) at (4.286, 5.0);
-		%
-		\path[fill=black] (HA) to [bend left=20] (HB) to (HD) to [bend right=20] (HC) to (HA);
-		\path[fill=black] (HA) to (HC) to (HF) to (HE) to (HA);
-		\path[fill=black] (HE) to (HF) to [bend left=20] (HG) to (HH) to [bend right=20] (HE);
-		\path[fill=black] (HB) to (HD) to (HG) to (HH) to (HB);
-		\path[fill=black] (HH) to (HI) to (HJ) to (HG);
-		\draw[line width=5*\hatscale] (HI) to [bend right=50] (HK);
-		\draw[line width=5*\hatscale] (HK) to [bend right=50] (HL);
-		\draw[line width=5*\hatscale] (HL) to [bend right=45] (HX);
-		\draw[line width=5*\hatscale] ($(HX) + (0.4, -.4)$) to [bend right=45] (HN);
-		\path[fill=black] (HM) to ($(HL) -(0.15, 0)$) to ($(HL) + (0.15, 0)$) to (HM);
-		\draw[line width=5*\hatscale] (HN) to [bend right=50] (HO);
-		\draw[line width=5*\hatscale] (HO) to [bend right=50] (HP);
-		\draw[line width=5*\hatscale]  ($(HF) +(0, 0.15)$) to (HP);
-		\path[fill=black] (HQ) to ($(HN) -(0.15, 0)$) to ($(HN) + (0.15, 0)$) to (HQ);
-		\path[fill=black] (HS) to ($(HR) -(0.15, 0)$) to ($(HR) + (0.15, 0)$) to (HS);
-		\path[fill=black] (HU) to ($(HT) -(0.15, 0)$) to ($(HT) + (0.15, 0)$) to (HU);
-		\path[fill=black] (HW) to ($(HV) -(0.15, 0)$) to ($(HV) + (0.15, 0)$) to (HW);
-	\end{tikzpicture}
+    \begin{tikzpicture}[scale=\hatscale]
+        \coordinate (HA) at (1.27, 0.635);
+        \coordinate (HB) at (5.87375, 0);
+        \coordinate (HC) at (1.5825, 0.9475);
+        \coordinate (HD) at (5.77375, 0.15);
+        \coordinate (HE) at (1.5875,1.905);
+        \coordinate (HF) at (1.8,1.74625);
+        \coordinate (HG) at (6.0325, 1.27);
+        \coordinate (HH) at (6.22, 1.33);
+        \coordinate (HI) at (6.45, 2.18);
+        \coordinate (HJ) at (6.35, 2.70);
+        \coordinate (HK) at (8.5725, 3.97);
+        \coordinate (HL) at (6.03, 4.7625);
+        \coordinate (HM) at (6.03, 3.651);
+        \coordinate (HN) at (2.2225, 5.3975);
+        \coordinate (HO) at (0.159, 4.603);
+        \coordinate (HP) at (1.587, 3.55);
+        \coordinate (HQ) at (2.5, 4.7625);
+        \coordinate (HR) at (2.778, 2.08);
+        \coordinate (HS) at (2.7, 4.1275);
+        \coordinate (HT) at (4.0, 1.98);
+        \coordinate (HU) at (4.286, 3.4925);
+        \coordinate (HV) at (5.3, 1.7);
+        \coordinate (HW) at (5.55, 2.85);
+        \coordinate (HX) at (4.286, 5.0);
+        %
+        \path[fill=black] (HA) to [bend left=20] (HB) to (HD) to [bend right=20] (HC) to (HA);
+        \path[fill=black] (HA) to (HC) to (HF) to (HE) to (HA);
+        \path[fill=black] (HE) to (HF) to [bend left=20] (HG) to (HH) to [bend right=20] (HE);
+        \path[fill=black] (HB) to (HD) to (HG) to (HH) to (HB);
+        \path[fill=black] (HH) to (HI) to (HJ) to (HG);
+        \draw[line width=5*\hatscale] (HI) to [bend right=50] (HK);
+        \draw[line width=5*\hatscale] (HK) to [bend right=50] (HL);
+        \draw[line width=5*\hatscale] (HL) to [bend right=45] (HX);
+        \draw[line width=5*\hatscale] ($(HX) + (0.4, -.4)$) to [bend right=45] (HN);
+        \path[fill=black] (HM) to ($(HL) -(0.15, 0)$) to ($(HL) + (0.15, 0)$) to (HM);
+        \draw[line width=5*\hatscale] (HN) to [bend right=50] (HO);
+        \draw[line width=5*\hatscale] (HO) to [bend right=50] (HP);
+        \draw[line width=5*\hatscale]  ($(HF) +(0, 0.15)$) to (HP);
+        \path[fill=black] (HQ) to ($(HN) -(0.15, 0)$) to ($(HN) + (0.15, 0)$) to (HQ);
+        \path[fill=black] (HS) to ($(HR) -(0.15, 0)$) to ($(HR) + (0.15, 0)$) to (HS);
+        \path[fill=black] (HU) to ($(HT) -(0.15, 0)$) to ($(HT) + (0.15, 0)$) to (HU);
+        \path[fill=black] (HW) to ($(HV) -(0.15, 0)$) to ($(HV) + (0.15, 0)$) to (HW);
+    \end{tikzpicture}
 }
 
 \def\ovenscale{0.2666}
 \def\ovenwidth{18pt}
 \NewDocumentCommand \MakeOven{} % inspired by the oven in the tikzsymbols package
 {
-	\begin{tikzpicture}[scale=\ovenscale]
-		\draw [line width=2*\ovenscale] (0,0) rectangle (2,1.5);
-		\draw [line width=2*\ovenscale] (0.125,0.125) rectangle (1.875,1);
-		\draw [line width=2*\ovenscale] (0.75,1.125) rectangle (1.25,1.375);
-		\draw [line width=2*\ovenscale] (0.5,0.875) to (1.5,0.875);
-		\draw [fill=black] (0.23, 1.25) circle [radius=0.1];
-		\draw [fill=black] (0.52, 1.25) circle [radius=0.1];
-		\draw [fill=black] (1.48, 1.25) circle [radius=0.1];
-		\draw [fill=black] (1.77, 1.25) circle [radius=0.1];
-	\end{tikzpicture}
+    \begin{tikzpicture}[scale=\ovenscale]
+        \draw [line width=2*\ovenscale] (0,0) rectangle (2,1.5);
+        \draw [line width=2*\ovenscale] (0.125,0.125) rectangle (1.875,1);
+        \draw [line width=2*\ovenscale] (0.75,1.125) rectangle (1.25,1.375);
+        \draw [line width=2*\ovenscale] (0.5,0.875) to (1.5,0.875);
+        \draw [fill=black] (0.23, 1.25) circle [radius=0.1];
+        \draw [fill=black] (0.52, 1.25) circle [radius=0.1];
+        \draw [fill=black] (1.48, 1.25) circle [radius=0.1];
+        \draw [fill=black] (1.77, 1.25) circle [radius=0.1];
+    \end{tikzpicture}
 }
 
 \ifMakeCookbook
 \else
-	\NewDocumentCommand \MakeTitlePage{}
-	{
-		\begingroup
-		%\centering
-		\begin{tikzpicture}[x=1in,y=1in]
-			\coordinate (TA) at (0, 0);
-			\coordinate (TB) at (6.125, 8);  % we ignore bottom 0.25 of text area to prevent newpage
-			\coordinate (TC) at (1, 0.25);
-			\coordinate (TD) at (5.125, 7.5);
-			\coordinate (TE) at (1, 7.5);
-			\coordinate (TF) at (5.125, 0.25);
-			\useasboundingbox (TA) rectangle (TB);
-			\draw [line width=1] (TC) to (TD);
-			\node[anchor=north west, align=left, font=\FontTitlepageTitle] at (TE) {The Miller Family Cooks};
-			\node[left, font=\FontTitlepageAuthor] at (TF) {Michaeljon Miller and Family};
-		\end{tikzpicture}
-		\endgroup
-	}
+    \NewDocumentCommand \MakeTitlePage{}
+    {
+        \begingroup
+        %\centering
+        \begin{tikzpicture}[x=1in,y=1in]
+            \coordinate (TA) at (0, 0);
+            \coordinate (TB) at (6.125, 8);  % we ignore bottom 0.25 of text area to prevent newpage
+            \coordinate (TC) at (1, 0.25);
+            \coordinate (TD) at (5.125, 7.5);
+            \coordinate (TE) at (1, 7.5);
+            \coordinate (TF) at (5.125, 0.25);
+            \useasboundingbox (TA) rectangle (TB);
+            \draw [line width=1] (TC) to (TD);
+            \node[anchor=north west, align=left, font=\FontTitlepageTitle] at (TE) {The Miller Family Cooks};
+            \node[left, font=\FontTitlepageAuthor] at (TF) {Michaeljon Miller and Family};
+        \end{tikzpicture}
+        \endgroup
+    }
 \fi
 
 %************ SECTION 7 - FRONT MATTER HELPER COMMANDS *************************************
 
 \ifMakeCookbook
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% This group for the MAKECOOKBOOK bundle
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\NewDocumentCommand \MyTitlePage{}
-	{
-		\noindent\vspace{144pt}
-		\begin{center}
-			{
-				{\FontTitlepageTitle The Miller Family Cooks} \par
-				\vspace*{\fill}
-				{\FontTitlepageAuthor by Michaeljon Miller and Family}\par
-			}
-		\end{center}
-		\vspace{40pt} \clearpage
-	}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % This group for the MAKECOOKBOOK bundle
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \NewDocumentCommand \MyTitlePage{}
+    {
+        \noindent\vspace{144pt}
+        \begin{center}
+            {
+                {\FontTitlepageTitle The Miller Family Cooks} \par
+                \vspace*{\fill}
+                {\FontTitlepageAuthor by Michaeljon Miller and Family}\par
+            }
+        \end{center}
+        \vspace{40pt} \clearpage
+    }
 
-	\NewDocumentCommand \ColophonFonts{}
-	{
-		Serif font (primary document font):
-		EB Garamond, \Copyright{} The EB Garamond Project Authors\par
-		\quad (github.com/octaviopardo/EBGaramond12). Licensed under the SIL Open Font License, Version 1.1.\par
-		Sans Serif font:
-		Lato, \Copyright{} Łukasz Dziedzic. Licensed under the SIL Open Font License, Version 1.1.\par
-		Script font: Italianno, \Copyright{} TypeSETit, LLC. Licensed under the SIL Open Font License, Version 1.1.\par
-	}
+    \NewDocumentCommand \ColophonFonts{}
+    {
+        Serif font (primary document font):
+        EB Garamond, \Copyright{} The EB Garamond Project Authors\par
+        \quad (github.com/octaviopardo/EBGaramond12). Licensed under the SIL Open Font License, Version 1.1.\par
+        Sans Serif font:
+        Lato, \Copyright{} Łukasz Dziedzic. Licensed under the SIL Open Font License, Version 1.1.\par
+        Script font: Italianno, \Copyright{} TypeSETit, LLC. Licensed under the SIL Open Font License, Version 1.1.\par
+    }
 
-	\NewDocumentCommand \CopyrightInfo{}
-	{Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
+    \NewDocumentCommand \CopyrightInfo{}
+    {Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
 
-	\NewDocumentCommand \MyDedication{}
-	{\hrule\vspace{5pt} To my family. And possibly some other stuff. \vspace{5pt}\hrule}
+    \NewDocumentCommand \MyDedication{}
+    {\hrule\vspace{5pt} To my family. And possibly some other stuff. \vspace{5pt}\hrule}
 
-	\NewDocumentCommand \DedicationVerso{}{}
+    \NewDocumentCommand \DedicationVerso{}{}
 
 \else
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% This group for our cookbook
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\NewDocumentCommand \MyTitlePage{} {\noindent \MakeTitlePage{} \clearpage}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % This group for our cookbook
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \NewDocumentCommand \MyTitlePage{} {\noindent \MakeTitlePage{} \clearpage}
 
-	\NewDocumentCommand \ColophonFonts{}
-	{
-		Serif font (primary document font):
-		Adobe Garamond Pro, \Copyright{} Adobe Systems Incorporated.\par
-		Sans Serif font:
-		Adobe Myriad Pro, \Copyright{} Adobe Systems Incorporated.\par
-		Script font: Italianno, \Copyright{} TypeSETit, LLC. Licensed under the SIL Open Font License, Version 1.1.\par
-	}
+    \NewDocumentCommand \ColophonFonts{}
+    {
+        Serif font (primary document font):
+        Adobe Garamond Pro, \Copyright{} Adobe Systems Incorporated.\par
+        Sans Serif font:
+        Adobe Myriad Pro, \Copyright{} Adobe Systems Incorporated.\par
+        Script font: Italianno, \Copyright{} TypeSETit, LLC. Licensed under the SIL Open Font License, Version 1.1.\par
+    }
 
-	\NewDocumentCommand \CopyrightInfo{}
-	{Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
+    \NewDocumentCommand \CopyrightInfo{}
+    {Copyright \Copyright{} 2025, Michaeljon Miller, all rights reserved}
 
-	\NewDocumentCommand \MyDedication{}
-	{\hrule\vspace{5pt}
-		To my family.  Now when you ask \Quote{how do you make...}, I just need to give you a page number.%
-		\vspace{5pt}\hrule}
+    \NewDocumentCommand \MyDedication{}
+    {\hrule\vspace{5pt}
+        To my family.  Now when you ask \Quote{how do you make...}, I just need to give you a page number.%
+        \vspace{5pt}\hrule}
 
-	\NewDocumentCommand \DedicationVerso{}
-	{
-		\begin{center}
-			{\FontChapterTitle
-				One cannot think well, \\
-				love well, sleep well, \\
-				if one has not dined well.\\
-				\vspace{5pt}
-				\hrule
-				\vspace{5pt}
-				Uno non pu\`o pensare bene, \\
-				amare bene, dormire bene, \\
-				se  non ha mangiato bene. \\
-				\vspace{5pt}
-				\hrule
-				\vspace{5pt}
-				Virginia Woolf
-			}
-		\end{center}
-	}
+    \NewDocumentCommand \DedicationVerso{}
+    {
+        \begin{center}
+            {\FontChapterTitle
+                One cannot think well, \\
+                love well, sleep well, \\
+                if one has not dined well.\\
+                \vspace{5pt}
+                \hrule
+                \vspace{5pt}
+                Uno non pu\`o pensare bene, \\
+                amare bene, dormire bene, \\
+                se  non ha mangiato bene. \\
+                \vspace{5pt}
+                \hrule
+                \vspace{5pt}
+                Virginia Woolf
+            }
+        \end{center}
+    }
 \fi
 
 %************ SECTION 8 - GRAPHICX RELATED COMMANDS ****************************************
@@ -711,44 +711,44 @@
 \captionsetup{justification=centering} % this is needed to have multi-line captions centered
 
 \pgfkeys{
-	/SideBySide/.is family, /SideBySide,
-	default/.style = {VertAlign = c, LeftCaption = \empty, RightCaption = \empty},
-	VertAlign/.estore in    = \VerticalAlign,
-	LeftCaption/.estore in  = \LeftText,
-	RightCaption/.estore in = \RightText,
+    /SideBySide/.is family, /SideBySide,
+    default/.style = {VertAlign = c, LeftCaption = \empty, RightCaption = \empty},
+    VertAlign/.estore in    = \VerticalAlign,
+    LeftCaption/.estore in  = \LeftText,
+    RightCaption/.estore in = \RightText,
 }
 
 \NewDocumentCommand \SideBySide{O{\empty} m m} % Q 5769
 {
-	\pgfkeys{/SideBySide, default, #1}%
-	%
-	\begin{figure}[htb]
-		\centering
-		\begin{minipage}[\VerticalAlign]{0.49\textwidth} % align at t= top, c = center, b = bottom
-			\centering
-			\includegraphics[width=0.97\textwidth]{#2} %
-			\ifx\LeftText\empty\relax\else\caption{\LeftText}\fi
-		\end{minipage}\hfill%
-		\begin{minipage}[\VerticalAlign]{0.49\textwidth}
-			\centering
-			\includegraphics[width=0.97\textwidth]{#3} % 
-			\ifx\RightText\empty\relax\else\caption{\RightText}\fi
-		\end{minipage}
-	\end{figure}
+    \pgfkeys{/SideBySide, default, #1}%
+    %
+    \begin{figure}[htb]
+        \centering
+        \begin{minipage}[\VerticalAlign]{0.49\textwidth} % align at t= top, c = center, b = bottom
+            \centering
+            \includegraphics[width=0.97\textwidth]{#2} %
+            \ifx\LeftText\empty\relax\else\caption{\LeftText}\fi
+        \end{minipage}\hfill%
+        \begin{minipage}[\VerticalAlign]{0.49\textwidth}
+            \centering
+            \includegraphics[width=0.97\textwidth]{#3} % 
+            \ifx\RightText\empty\relax\else\caption{\RightText}\fi
+        \end{minipage}
+    \end{figure}
 }
 
 %************ SECTION 9 - HYPERREF RELATED COMMANDS ****************************************
 \ifHyperRef
-	\usepackage[bookmarks=true,colorlinks=true, allcolors=clrHyperRef]{hyperref}
-	\usepackage{bookmark} % Q 247158 shows Heiko (the author) loads both hyperref and bookmark
+    \usepackage[bookmarks=true,colorlinks=true, allcolors=clrHyperRef]{hyperref}
+    \usepackage{bookmark} % Q 247158 shows Heiko (the author) loads both hyperref and bookmark
 
-	\newcounter{ctrRecipe} % initially set to zero by \newcounter macro
-	\NewDocumentCommand \RecipeBookmark{m}{%
-		\ifx\%1\empty\relax\else\stepcounter{ctrRecipe}\pdfbookmark[1]{#1}{Recipe\arabic{ctrRecipe}}\fi
-	}
+    \newcounter{ctrRecipe} % initially set to zero by \newcounter macro
+    \NewDocumentCommand \RecipeBookmark{m}{%
+        \ifx\%1\empty\relax\else\stepcounter{ctrRecipe}\pdfbookmark[1]{#1}{Recipe\arabic{ctrRecipe}}\fi
+    }
 \else
-	\providecommand\phantomsection{}% Q 44088
-	\NewDocumentCommand \RecipeBookmark{m}{}%
+    \providecommand\phantomsection{}% Q 44088
+    \NewDocumentCommand \RecipeBookmark{m}{}%
 \fi
 
 \NewDocumentCommand \RecipeLabel{m}{\phantomsection\label{recipe:#1}}
@@ -756,11 +756,11 @@
 
 \NewDocumentCommand \CookbookIndex{}
 {
-	\cleardoublepage % flush all material and clear until you start new odd numbered (recto) page
-	%
-	% the following line needed if hyperref is loaded (p. 18 of hyperref manual):
-	\phantomsection\addcontentsline{toc}{chapter}{\indexname} % see also Q 59619
-	%
-	\printindex
+    \cleardoublepage % flush all material and clear until you start new odd numbered (recto) page
+    %
+    % the following line needed if hyperref is loaded (p. 18 of hyperref manual):
+    \phantomsection\addcontentsline{toc}{chapter}{\indexname} % see also Q 59619
+    %
+    \printindex
 }
 
